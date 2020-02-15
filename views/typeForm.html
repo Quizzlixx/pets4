@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick a Type</title>
+</head>
+<body>
+<form method= "post" action="#">
+    <label> what animal would you like to order?
+        <input type="text" name="animal">
+    </label>
+    <input type="Submit" value="Next">
+    <check if="{{ isset(@errors['animal']) }}">
+        <br>
+        <label> {{ @errors['animal'] }}</label>
+    </check>
+</form>
+</body>
+</html>

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Results</title>
 </head>
 <body>
 <h1>Results page</h1>
-<p>Thank you for ordering a {{@SESSION.color}} {{@SESSION.animal}}!</p>
+<p>Thank you for ordering {{ @SESSION.name }}, your {{@SESSION.color}} {{@SESSION.animal}}!</p>
+<p>{{ @pet1->getName() }} {{ @pet1->getColor() }} {{ @pet1->getType }}</p>
 </body>
 </html>
