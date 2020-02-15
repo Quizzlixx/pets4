@@ -32,6 +32,9 @@ $f3->set('DEBUG', 3);
 // array of colors
 $f3->set('colors', array("pink", "green", "blue"));
 
+// pet instantiation
+$pet1 = new Pet("Lorelei", "Tabby", "Cat");
+
 //DEFINE A DEFAULT ROUTE
 $f3->route('GET /', function () {
     //$view = new Template();
