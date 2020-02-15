@@ -7,11 +7,11 @@ class Pet
     private $_type;
 
     // PHP only allows ONE constructor
-    function __construct($name = "unknown", $color = "?", $type = "unknown")
+    function __construct($type = "unknown", $color = "?", $name = "unknown")
     {
-        $this->_name = $name;
-        $this->_color = $color;
         $this->_type = $type;
+        $this->_color = $color;
+        $this->_name = $name;
     }
 
     function eat()
