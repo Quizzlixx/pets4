@@ -9,7 +9,11 @@
     <label> what color animal would you like?
         <select type="text" name="color">
             <repeat group="{{ @colors }}" value="{{ @type }}">
-                <option value="{{ @type }}"> {{ @type }}</option>
+                <option value="{{ @type }}"
+                <check if="{{ @color == @selectedColor }}">
+                    selected
+                </check>
+                > {{ @type }}</option>
             </repeat>
         </select>
     </label>

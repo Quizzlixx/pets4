@@ -34,6 +34,8 @@ function makePet($animal)
         $pet1 = new Dog($animal);
     } else if (strtolower($animal) == "cat") {
         $pet1 = new Cat($animal);
+    } else if (strtolower($animal) == "elephant") {
+        $pet1 = new Elephant($animal);
     } else {
         $pet1 = new Pet($animal);
     }
