@@ -67,6 +67,7 @@ $f3->route('GET|POST /color', function ($f3) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['color']) && validColor($_POST['color'])) {
             $_SESSION['color'] = $_POST['color'];
+            $_SESSION['pet1']->setColor($_SESSION['color']);
             $f3->reroute('/name');
         } else {
             $f3->set("errors['color']", "please enter a valid color.");
