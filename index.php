@@ -86,6 +86,7 @@ $f3->route('GET|POST /name', function ($f3) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['name']) && validString($_POST['name'])) {
             $_SESSION['name'] = $_POST['name'];
+            $_SESSION['pet1']->setName($_SESSION['name']);
             $f3->reroute('/results');
         } else {
             $f3->set("errors['name']", "please enter a name.");
