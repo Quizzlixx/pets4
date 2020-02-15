@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals</title>
+</head>
+<body>
+<form method= "post" action="#">
+    <label> what would like to order?
+        <input type="text" name="animal">
+    </label>
+    <input type="Submit" value="Next">
+    <check if="{{ isset(@errors['animal']) }}">
+        <br>
+        <label> {{ @errors['animal'] }}</label>
+    </check>
+</form>
+</body>
+</html>

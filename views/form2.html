@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="#">
+    <label> what would like to order?
+        <select type="text" name="color">
+            <repeat group="{{ @colors }}" value="{{ @type }}">
+                <option value="{{ @type }}"> {{ @type }}</option>
+            </repeat>
+        </select>
+    </label>
+    <input type="Submit" value="Next">
+
+    <check if="{{ isset(@errors['color']) }}">
+        <br>
+        <label> {{ @errors['color'] }}</label>
+    </check>
+</form>
+</body>
+</html>

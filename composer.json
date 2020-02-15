@@ -1,0 +1,12 @@
+{
+  "name": "328/pets4",
+  "authors": [
+    {
+      "name": "Kerrie Low",
+      "email": "klow4@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
